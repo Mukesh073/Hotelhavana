@@ -614,37 +614,59 @@ Your happiness and satisfaction are our top priorities.
               <div class="sec-title"> <span class="sub-title">ROOMS & SUITES</span>
                 <h2>Hotel Booking </h2>
               </div>
-              <form class="bk-form">
-                <div class="frm-field">
-                  <input type="text" name="check-in" class="date-pick" placeholder="Check in" />
-                  <img src="images/icons/mail.png" alt="" />
+
+              
+             <form class="bk-form">
+            
+               <div class="frm-field">
+              <i class="fal fa-user"></i>
+                                            <input type="text" id="fullname" name="fullname"
+                                                placeholder="Enter your full name" required
+                                                >
+                 <!----<input type="tel" name="check-in" class="date-pick" placeholder="Check in" /> 
+                  <img src="images/icons/mail.png" alt="" /> -->
                 </div>
                 <div class="frm-field">
-                  <input type="text" name="check-in" class="date-pick" placeholder="Check out" />
-                  <img src="images/icons/mail.png" alt="" />
+                         <i class="fas fa-mobile-alt"></i>
+                                            <input type="tel" id="mobile" name="mobile"
+                                                placeholder="Enter your mobile number" pattern="[0-9]{10}" required>
+                  <!--<input type="text" name="check-in" class="date-pick" placeholder="Check out" />
+                  <img src="images/icons/mail.png" alt="" /> -->
                 </div>
                 <div class="frm-field">
-                  <select>
+                                 <i class="fal fa-users"></i>
+
+                                            <input type="number" id="adult" name="adult" placeholder=" number of person"
+                                                value="0" min="1" max="5" required>
+
+
+                 <!---- <select>
                     <option>Adult</option>
                     <option>Adult</option>
                     <option>Adult</option>
                     <option>Adult</option>
-                  </select>
-                  <i class="fa fa-angle-down"></i>
+                  </select> 
+                  <i class="fa fa-angle-down"></i>-->
                 </div>
                 <div class="frm-field">
-                  <select>
+                   <select name="room" id="rm2" required>
+                                                <option value="" selected>-- Select Room Type --</option>
+                                                <option value="deluxe-room">Deluxe Room</option>
+                                                <option value="executive-room">Executive Room</option>
+                                                <option value="super-executive-room">Super Executive Room</option>
+                                            </select>
+                 <!--- <select>
+                    <option>Rooms</option>
+                    <option>room</option>
                     <option>Children</option>
                     <option>Children</option>
-                    <option>Children</option>
-                    <option>Children</option>
-                  </select>
+                  </select> -->
                   <i class="fa fa-angle-down"></i>
                 </div>
                 <div class="form-submit">
-                  <button type="submit">Check Availability</button>
+                  <button type="submit">Book Now</button>
                 </div>
-              </form>
+              </form> 
             </div>
           </div>
         </div>
@@ -666,7 +688,7 @@ Your happiness and satisfaction are our top priorities.
              
               <div class="image-box">
                 <figure class="image wow fadeInUp"><img src="images/comment/c 02.png" alt=""></figure>
-                <i class="icon fa fa-circle-check"></i>
+              
               </div>
               <div class="text">Excellent service, peaceful ambience, delicious food — Hotel Havana is always the first choice.
 
@@ -681,7 +703,7 @@ Your happiness and satisfaction are our top priorities.
               
               <div class="image-box">
                 <figure class="image wow fadeInUp"><img src="images/comment/c 03.png" alt=""></figure>
-                <i class="icon fa fa-circle-check"></i>
+              <!---- <i class="icon fa fa-circle-check"></i> -->
               </div>
               <div class="text">Best hotel in Gorakhpur! Loved the food, ambience, and service. Will definitely come back.</div>
             </div>
@@ -693,7 +715,7 @@ Your happiness and satisfaction are our top priorities.
              
               <div class="image-box">
                 <figure class="image wow fadeInUp"><img src="images/comment/c 04.png" alt=""></figure>
-                <i class="icon fa fa-circle-check"></i>
+               <!---- <i class="icon fa fa-circle-check"></i> -->
               </div>
               <div class="text">Every stay felt special, every moment was delightful — Hotel Havana offers perfect experiences.
 
@@ -862,7 +884,7 @@ Your happiness and satisfaction are our top priorities.
         <div class="auto-container">
           <div class="row">
             <!-- Footer Column -->
-            <div class="footer-column col-lg-6 col-sm-6">
+            <div class="footer-column col-lg-4 col-sm-6">
               <div class="footer-widget about-widget wow fadeInLeft">
                 <div class="widget-content">
                   <div class="logo"><a href="#"> <img src="images/logo-2.png" alt=""></a></div>
