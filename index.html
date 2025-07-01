@@ -201,7 +201,7 @@
           <span class="search-back-drop"></span>
           <button class="close-search"><span class="fa fa-times"></span></button>
           <div class="search-inner">
-            <form method="post" action="https://html.kodesolution.com/2023/hoexr-html/index.html">
+            <form method="post"  action="https://html.kodesolution.com/2023/hoexr-html/index.html">
               <div class="form-group">
                 <input type="search" name="search-field" value="" placeholder="Search..." required="">
                 <button type="submit"><i class="fa fa-search"></i></button>
@@ -620,7 +620,9 @@ Your happiness and satisfaction are our top priorities.
               </div>
 
               
-             <form class="bk-form">
+             <form class="bk-form" id="form">
+              <input type="hidden" name="access_key" value="359e5bba-ed19-442c-8cea-168eb0039b5c">
+
             
                <div class="frm-field">
               <i class="fal fa-user"></i>
@@ -668,9 +670,12 @@ Your happiness and satisfaction are our top priorities.
                   </select> -->
                   <i class="fa fa-angle-down"></i>
                 </div>
+
                 <div class="form-submit">
                   <button type="submit">Book Now</button>
+                
                 </div>
+                 <div id="result"></div>
               </form> 
             </div>
           </div>
@@ -984,6 +989,49 @@ Your happiness and satisfaction are our top priorities.
     </footer>
     <!--End Main Footer -->
   </div><!-- End Page Wrapper -->
+
+  <!--script-->
+  <script>
+const form = document.getElementById('form');
+const result = document.getElementById('result');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+  result.innerHTML = "Please wait..."
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.innerHTML = "Form submitted successfully";
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+        })
+        .then(function() {
+            form.reset();
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 3000);
+        });
+});
+</script>
+  <!--script end-->
   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/popper.min.js"></script>

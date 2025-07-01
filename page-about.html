@@ -413,8 +413,8 @@ Your happiness and satisfaction are our top priorities.
               <h2>Hotel Booking </h2>
             </div>
             
-           <form class="bk-form">
-          
+           <form class="bk-form" id="form">
+           <input type="hidden" name="access_key" value="359e5bba-ed19-442c-8cea-168eb0039b5c">
              <div class="frm-field">
             <i class="fal fa-user"></i>
                                           <input type="text" id="fullname" name="fullname"
@@ -460,6 +460,7 @@ Your happiness and satisfaction are our top priorities.
               <div class="form-submit">
                 <button type="submit">Book Now</button>
               </div>
+               <div id="result"></div>
             </form> 
           </div>
         </div>
@@ -763,6 +764,48 @@ Your happiness and satisfaction are our top priorities.
     </div>
   </footer>
   <!--End Main Footer -->
+    <!--script-->
+  <script>
+const form = document.getElementById('form');
+const result = document.getElementById('result');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+  result.innerHTML = "Please wait..."
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.innerHTML = "Form submitted successfully";
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+        })
+        .then(function() {
+            form.reset();
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 3000);
+        });
+});
+</script>
+  <!--script end-->
 </div><!-- End Page Wrapper -->
 <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 <script src="js/jquery.js"></script>
