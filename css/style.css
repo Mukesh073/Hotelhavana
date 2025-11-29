@@ -2216,7 +2216,7 @@ Main Header
   text-align: center;
 }
 .header-style-two .main-box {
-  background-color: var(--theme-color-light);
+  background-color:black ;
   padding: 24px 36px 24px 40px;
 }
 @media (max-width: 991.98px) {
@@ -2236,7 +2236,7 @@ Main Header
   color: var(--theme-color1);
 }
 .header-style-two .main-menu .navigation > li > a {
-  color: #000000;
+  color:white;
   text-transform: uppercase;
   position: relative;
 }
@@ -2342,7 +2342,7 @@ Main Header
       -ms-flex-order: unset;
           order: unset;
   font-size: 24px;
-  color: #000;
+  color: #f0ebeb;
   margin-top: 3px;
 }
 .header-style-two .main-menu .navigation > li > ul > li > a:hover {
@@ -2353,7 +2353,7 @@ Main Header
 }
 .header-style-two .sticky-header .mobile-nav-toggler {
   display: none;
-  color: #000;
+  color: #ede6e6;
   font-size: 24px;
   margin-top: 20px;
 }
@@ -2371,7 +2371,7 @@ Main Header
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #fff;
+  background: #131212;
 }
 .header-style-two .sticky-header .main-menu {
   height: 100%;
