@@ -4318,9 +4318,9 @@ Section Title
   position: absolute;
   left: 135px;
   background: #000;
-  width: 260px;
+  width: 200px;
   text-align: center;
-  padding: 36px 15px 33px;
+  padding: 20px 15px 33px;
 }
 .exp-box figure {
   margin-bottom: 12px;
@@ -4395,11 +4395,42 @@ Section Title
   position: relative;
   margin-bottom: 50px;
 }
-@media (max-width: 575.98px) {
+/* @media (max-width: 575.98px) {
   .about-section .image-column {
     display: none;
   }
+} */
+ @media (max-width: 575.98px) {
+ 
+    .about-section .image-column {
+        display: block !important;
+        width: 100% !important; 
+        margin-bottom: 40px; 
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .about-section .image-column .image-1, 
+    .about-section .image-column .image-2 {
+        position: relative !important;
+        width: 100% !important;
+        margin-bottom: 15px;
+        border: none !important; 
+   
+        display: block; 
+    }
+    
+    .about-section .image-column .image-1::after {
+        display: none;
+    }
+    
+  
+    .about-section .image-column .image-4,
+    .about-section .image-column .image-5 {
+        display: none !important; 
+    }
 }
+
 .about-section .image-column .inner-column {
   position: relative;
   padding-left: 20px;
