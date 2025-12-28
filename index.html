@@ -35,7 +35,13 @@
           <div class="inner-box">
             <!-- top-left -->
             <div class="top-left">
-              <span><i class="icon fa fa-location"></i> Gorakhpur</span>
+             <span>
+  <a href="tel:+919451903390" style="color:#adadad; text-decoration:none;">
+    <i class="fas fa-mobile-alt" style="color:#adadad;"></i>
+    +91 94519 03390
+  </a>
+</span>
+
             </div>
             <!-- Top-right -->
             <div class="top-right">
@@ -325,51 +331,135 @@
     </div> -->
 
     <!-- About Section -->
-    <section class="about-section-two">
-      <div class="auto-container">
-        <div class="row">
-          <!-- Content Column -->
-          <div class="content-column col-lg-7 wow fadeInRight" data-wow-delay="600ms">
-            <div class="inner-column">
-              <div class="sec-title">
-                <span class="sub-title">Hotel Havana</span>
-                <h2>A Timeless Blend of Luxury<br> Comfort & Charm</h2>
-                <div class="text">Hotel Havana is a luxury retreat where comfort meets elegance. Set in a unique
-                  location, it offers stylish rooms, gourmet dining, and exceptional service. Perfect for both leisure
-                  and business travelers seeking a peaceful yet premium experience.</div>
-              </div>
-         
-              <ul class="list-style-two">
-                <li><i class="icon fa fa-circle-check"></i>Elegant rooms, peaceful ambience, comfort beyond your
-                  expectations.</li>
-                <li><i class="icon fa fa-circle-check"></i>Delicious cuisine, expert chefs, local and global flavor
-                  fusion.</li>
+<section class="about-section pt-0" style="padding: 80px 0 60px 0; background: #1a1a1a;">
+  <style>
+    /* --- Base Gaps & Fixes --- */
+    .about-section img {
+      display: block; 
+      width: 100%;
+      height: auto !important;
+    }
 
-              </ul>
-              <div class="btn-box">
-                <a href="page-about.html" class="theme-btn btn-style-one"><span class="btn-title">Discover
-                    More</span></a>
-              </div>
+    /* --- TABLET VIEW FIX (768px to 1199px) --- */
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .about-section {
+        padding-top: 120px !important; /* Yahan se Tablet me top padding badhayi gayi hai */
+        padding-bottom: 80px !important;
+      }
+      .about-section .features-grid {
+        grid-template-columns: 1fr 1fr !important; /* Tablet par side-by-side */
+        gap: 25px;
+      }
+      .about-section .image-column {
+        margin-bottom: 70px; /* Image aur content ke beech gap */
+      }
+      .about-section .quote-box {
+        position: absolute;
+        bottom: -30px;
+        right: 0 !important;
+        max-width: 300px !important;
+      }
+    }
+
+    /* --- MOBILE VIEW (Below 767px) --- */
+    @media (max-width: 767px) {
+      .about-section { padding: 50px 0 !important; }
+      .about-section h2 { font-size: 28px !important; }
+      .about-section .features-grid { grid-template-columns: 1fr !important; }
+      .about-section .quote-box {
+        position: relative !important;
+        right: auto !important;
+        bottom: auto !important;
+        margin-top: 40px;
+        max-width: 100% !important;
+      }
+    }
+
+    .about-section .image-box:hover img { transform: scale(1.05); }
+  </style>
+
+  <div class="auto-container">
+    <div class="row align-items-center">
+      
+      <div class="image-column col-xl-6 col-lg-6 col-md-12">
+        <div class="inner-column" style="position: relative;">
+          
+          <div class="premium-image-container" style="position: relative; border-radius: 25px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.4); background: #c78a36; padding: 6px;">
+            
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, #c78a36, #aa8453, #8e6d42, #c78a36); border-radius: 25px; padding: 3px; z-index: 1;">
+              <div style="background: #1a1a1a; border-radius: 22px; width: 100%; height: 100%;"></div>
+            </div>
+            
+            <div class="image-box" style="position: relative; border-radius: 20px; overflow: hidden; z-index: 2; background: #1a1a1a;">
+              <figure class="image wow fadeInUp" style="margin: 0;">
+                <img src="images/banner/receptions.JPG" alt="Hotel Havana Gorakhpur" style="width: 100%; transition: all 0.6s ease; filter: brightness(1.1);">
+                <div class="luxury-badge" style="position: absolute; top: 20px; left: 20px; background: rgba(199,138,54,0.95); color: #fff; padding: 8px 16px; border-radius: 25px; font-size: 12px; font-weight: 700; text-transform: uppercase;">
+                  <i class="fa fa-crown" style="margin-right: 5px;"></i>Premium Suite
+                </div>
+              </figure>
             </div>
           </div>
-          <!-- Image Column -->
-          <div class="image-column col-lg-5">
-            <div class="inner-column wow fadeInLeft">
-              <figure class="image-1 overlay-anim wow fadeInUp"><img src="images/resource/about2-1.jpg" alt=""></figure>
-              <figure class="image-2 overlay-anim wow fadeInLeft"><img src="images/resource/about2-2.jpg" alt="">
-              </figure>
-              <div class="exp-box bounce-y">
-                <figure class=" overlay-anim wow fadeInLeft"><img src="images/resource/exp-icon.png" alt=""></figure>
-                <h4 class="title">Luxury Room</h4>
-                <div class="text">Spacious luxury room <br>with elegant décor, soft lighting,<br> comfort, and stunning
-                  views.
-                </div>
+          
+          <div class="quote-box" style="position: absolute; bottom: -20px; right: -15px; background: linear-gradient(145deg, #2a2a2a, #1f1f1f); padding: 30px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 2px solid #c78a36; max-width: 320px; z-index: 3;">
+            <div class="rating-box" style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+              <div style="background: linear-gradient(135deg, #c78a36, #aa8453); padding: 10px 15px; border-radius: 12px;">
+                <span style="font-size: 24px; font-weight: 900; color: #fff;">5.0</span>
               </div>
+              <div style="display: flex; flex-direction: column;">
+                <div style="display: flex; gap: 4px; color: #ffb400;">
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+                <span style="color: #c78a36; font-size: 12px; font-weight: 600;">Google Excellence</span>
+              </div>
+            </div>
+            <div class="text" style="font-size: 14px; line-height: 1.6; color: #f0f0f0; font-style: italic;">
+              "Recognized for <span style="color: #c78a36; font-weight: 700;">impeccable hygiene</span> and unparalleled hospitality in Gorakhpur."
             </div>
           </div>
         </div>
       </div>
-    </section>
+
+      <div class="content-column col-xl-6 col-lg-6 col-md-12">
+        <div class="inner-column" style="padding-left: 40px;">
+          <div class="sec-title">
+            <span class="sub-title" style="color: #aa8453; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; display: block; margin-bottom: 15px;">GORAKHPUR'S TOP-RATED HOTEL</span>
+            <h2 style="font-size: 42px; font-weight: 700; color: #fff; margin-bottom: 25px;">Where Luxury Meets<br><span style="color: #aa8453;">Heartfelt Hospitality</span></h2>
+            <div class="text" style="font-size: 16px; line-height: 1.7; color: #ccc; margin-bottom: 35px; text-align: justify;">
+              Havana Hotel is recognized as the <strong style="color: #aa8453;">Best Hotel in Gorakhpur</strong> for travelers who value elegance and peace. Located in the heart of Taramandal.
+            </div>
+            
+            <div class="features-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+              <div class="feature-list">
+                <h4 class="title" style="color: #c78a36; font-size: 16px; font-weight: 700; margin-bottom: 8px;"><i class="fa fa-gem"></i> Guest Comfort</h4>
+                <ul style="list-style: none; padding: 0; margin: 0; color: #ddd; font-size: 14px;">
+                  <li style="padding: 4px 0;"><i class="fa fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>Super Clean & Hygienic</li>
+                  <li style="padding: 4px 0;"><i class="fa fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>Beautiful Ambience</li>
+                  <li style="padding: 4px 0;"><i class="fa fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>Modern Interior Design</li>
+                </ul>
+              </div>
+              <div class="feature-list">
+                <h4 class="title" style="color: #c78a36; font-size: 16px; font-weight: 700; margin-bottom: 8px;"><i class="fa fa-handshake"></i> Our Promise</h4>
+                <ul style="list-style: none; padding: 0; margin: 0; color: #ddd; font-size: 14px;">
+                  <li style="padding: 4px 0;"><i class="fa fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>Cooperative Staff</li>
+                  <li style="padding: 4px 0;"><i class="fa fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>Prime City Location</li>
+                  <li style="padding: 4px 0;"><i class="fa fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>24/7 Professional Service</li>
+                </ul>
+              </div>
+            </div>
+
+            <div style="margin-top: 35px;">
+              <a href="page-about.html" style="display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, #aa8453 0%, #8e6d42 100%); color: #fff; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: 600; text-transform: uppercase;">
+                <span>Discover More</span> <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
     <!--Emd About Section -->
 
     <!-- service section two -->
@@ -416,188 +506,330 @@
               </div>
             </div>
           </div>
-          <!-- service-block -->
-          <div class="service-block-two col-lg-4 col-sm-6">
-            <div class="inner-box wow fadeInLeft" data-wow-delay="500ms">
-              <div class="image-box">
-                <div class="icon-box wow fadeInUp"><i class="flaticon-travel"></i></div>
-                <h4 class="title"><a href="page-service-details.html">Pick Up & Drop</a></h4>
-              </div>
-              <div class="content-box">
-                <div class="text">Timely pick-up, smooth drop, comfortable ride, airport transfer service.</div>
-              </div>
-            </div>
-          </div>
-          <!-- service-block -->
-          <div class="service-block-two col-lg-4 col-sm-6">
-            <div class="inner-box-two wow fadeInLeft" data-wow-delay="600ms">
-              <div class="image-box">
-                <figure class="image wow fadeInUp overlay-anim"><img src="images/resource/service2-1.jpg" alt="">
-                </figure>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
     <!-- End news section -->
 
     <!-- pricing-section-two -->
-    <section class="pricing-section-two pt-0">
-      <div class="auto-container">
-        <div class="sec-title text-center"> <span class="sub-title">Best price</span>
-          <h2>The Best Luxury Rooms <br> And Suites</h2>
-        </div>
-        <div class="row">
-          <!-- pricing-block-two -->
-          <div class="pricing-block-two col-sm-6">
-            <div class="inner-box">
-              <div class="row">
-                <div class="content-column col-lg-4 col-md-6">
-                  <div class="inner-column wow fadeInLeft">
-                    <!---- <h6 class="title"><span> </span></h6> -->
-                    <span>Single Room</span>
-                    <ul class="list-style-two">
-                      <li><i class="icon fa fa-circle-check"></i>Pick & Drop Service</li>
-                     
-                      <li><i class="icon fa fa-circle-check"></i>City Tour Guide</li>
-                      <li><i class="icon fa fa-circle-check"></i>Fibre Internet</li>
-                    </ul>
-                    <a href="#" class="book-now">Book Now</a>
-                  </div>
-                </div>
-                <div class="image-column col-lg-8 col-md-6">
-                  <div class="image-box">
-                    <figure class="image wow fadeInUp"><img src="images/resource/pricing2-1.jpg" alt=""></figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- pricing-block-two -->
-          <div class="pricing-block-two col-sm-6">
-            <div class="inner-box">
-              <div class="row">
-                <div class="content-column col-lg-4 col-md-6">
-                  <div class="inner-column wow fadeInLeft">
-                    <!---- <h6 class="title">$250<span> / Night</span></h6> -->
-                    <span>Double Room</span>
-                    <ul class="list-style-two">
-                      <li><i class="icon fa fa-circle-check"></i>Pick & Drop Service</li>
-                      
-                      <li><i class="icon fa fa-circle-check"></i>City Tour Guide</li>
-                      <li><i class="icon fa fa-circle-check"></i>Fibre Internet</li>
-                    </ul>
-                    <a href="#" class="book-now">Book Now</a>
-                  </div>
-                </div>
-                <div class="image-column col-lg-8 col-md-6">
-                  <div class="image-box">
-                    <figure class="image wow fadeInUp"><img src="images/resource/pricing2-2.jpg" alt=""></figure>
-                  </div>
-                </div>
-              </div>
-            </div>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<section class="hotel-hero-slider" style="padding: 60px 0; background: #000; overflow: hidden;">
+  <style>
+    .hotel-hero-slider { font-family: 'Poppins', sans-serif; }
+
+    /* --- Slider Track --- */
+    .slider-container {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 40px;
+      padding: 10px 40px 40px; 
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none; /* Firefox scrollbar hide */
+    }
+    .slider-container::-webkit-scrollbar { display: none; } /* Chrome/Safari scrollbar hide */
+
+    /* --- 800PX ULTRA-WIDE CARD --- */
+    .room-card-800 {
+      flex: 0 0 800px; 
+      background: #111;
+      border: 1px solid #1a1a1a;
+      scroll-snap-align: center;
+      transition: all 0.5s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    
+    .room-card-800:hover { border-color: #aa8453; }
+
+    .room-card-800 .img-box {
+      position: relative;
+      height: 350px; 
+      overflow: visible;
+    }
+
+    .room-card-800 .img-box img {
+      width: 100%; height: 100%; object-fit: cover;
+      display: block; filter: brightness(0.85);
+    }
+
+    /* Reference Style Button */
+    .room-card-800 .book-btn-ref {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      background: #724b2e;
+      color: #fff;
+      padding: 15px 60px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-decoration: none;
+      z-index: 10;
+      min-width: 250px;
+      text-align: center;
+      letter-spacing: 1.5px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    }
+
+    .room-card-800 .text-content {
+      padding: 40px 50px 0px; 
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .room-card-800 h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .room-card-800 p {
+      font-size: 14px;
+      color: #888;
+      line-height: 1.6;
+      margin-bottom: 10px;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .room-card-800 .amenities-footer {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px 0;
+      border-top: 1px solid #1f1f1f;
+      color: #444;
+      font-size: 22px;
+    }
+    .room-card-800:hover .amenities-footer { color: #aa8453; }
+
+    /* --- ADDED: SCROLL INDICATOR UI --- */
+    .scroll-indicator-wrapper {
+      width: 200px; /* Width of the track */
+      height: 3px;
+      background: #222;
+      margin: 30px auto 0;
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .scroll-indicator-bar {
+      width: 0%; /* Initially 0, controlled by JS */
+      height: 100%;
+      background: #aa8453; /* Premium Gold Color */
+      transition: width 0.1s linear;
+    }
+
+    @media (max-width: 991px) {
+      .room-card-800 { flex: 0 0 90%; }
+      .room-card-800 .img-box { height: 250px; }
+      .room-card-800 h3 { font-size: 24px; }
+    }
+  </style>
+
+  <div class="auto-container">
+    <div class="text-center" style="margin-bottom: 20px;">
+      <span style="color: #aa8453; font-weight: 600; text-transform: uppercase; letter-spacing: 4px; font-size: 12px;">Premium Accommodation</span>
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 48px; color: #fff; margin-top: 5px;">Our Rooms & Suites</h2>
+    </div>
+
+    <div class="slider-container" id="hotelSlider">
+      
+      <div class="room-slide">
+        <div class="room-card-800">
+          <div class="img-box"><img src="images/resource/pricing2-1.jpg" alt="Deluxe Room"><a href="#" class="book-btn-ref">Book Now</a></div>
+          <div class="text-content">
+            <h4>Single Deluxe Suite</h4>
+            <p>Designed for excellence, our single suites combine luxury with personalized service for an unforgettable stay in Gorakhpur.</p>
+            <div class="amenities-footer"><i class="fa fa-bed"></i><i class="fa fa-wifi"></i><i class="fa fa-car"></i><i class="fa fa-tv"></i><i class="fa fa-coffee"></i></div>
           </div>
         </div>
       </div>
-    </section>
+
+      <div class="room-slide">
+        <div class="room-card-800">
+          <div class="img-box"><img src="images/resource/pricing2-2.jpg" alt="Executive Room"><a href="#" class="book-btn-ref">Book Now</a></div>
+          <div class="text-content">
+            <h4>Executive Business Suite</h4>
+            <p>A sophisticated space tailored for the modern executive, featuring a full-sized work desk and premium high-speed internet.</p>
+            <div class="amenities-footer"><i class="fa fa-bed"></i><i class="fa fa-laptop"></i><i class="fa fa-wifi"></i><i class="fa fa-glass-martini"></i><i class="fa fa-coffee"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-slide">
+        <div class="room-card-800">
+          <div class="img-box"><img src="images/resource/pricing2-1.jpg" alt="Royal Suite"><a href="#" class="book-btn-ref">Book Now</a></div>
+          <div class="text-content">
+            <h4>Royal Grand Suite</h4>
+            <p>The peak of grandeur, offering expansive floor plans, a private lounge area, and panoramic city views.</p>
+            <div class="amenities-footer"><i class="fa fa-bed"></i><i class="fa fa-bath"></i><i class="fa fa-tv"></i><i class="fa fa-city"></i><i class="fa fa-utensils"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-slide">
+        <div class="room-card-800">
+          <div class="img-box"><img src="images/resource/pricing2-2.jpg" alt="Family Suite"><a href="#" class="book-btn-ref">Book Now</a></div>
+          <div class="text-content">
+            <h4>Family Luxury Suite</h4>
+            <p>Perfect for large groups, featuring interconnected rooms and world-class child-friendly amenities.</p>
+            <div class="amenities-footer"><i class="fa fa-bed"></i><i class="fa fa-wifi"></i><i class="fa fa-child"></i><i class="fa fa-utensils"></i><i class="fa fa-shield-alt"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-slide">
+        <div class="room-card-800">
+          <div class="img-box"><img src="images/resource/pricing2-1.jpg" alt="Presidential Suite"><a href="#" class="book-btn-ref">Book Now</a></div>
+          <div class="text-content">
+            <h4>Presidential Signature</h4>
+            <p>Our most exclusive accommodation, featuring a private mini-bar, home theater, and 24/7 personal concierge service.</p>
+            <div class="amenities-footer"><i class="fa fa-gem"></i><i class="fa fa-wifi"></i><i class="fa fa-cocktail"></i><i class="fa fa-couch"></i><i class="fa fa-tv"></i></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="scroll-indicator-wrapper">
+      <div class="scroll-indicator-bar" id="progressBar"></div>
+    </div>
+
+  </div>
+
+  <script>
+    const sliderContainer = document.getElementById('hotelSlider');
+    const indicatorBar = document.getElementById('progressBar');
+
+    sliderContainer.addEventListener('scroll', () => {
+      // Calculate how much has been scrolled
+      const scrollWidth = sliderContainer.scrollWidth - sliderContainer.clientWidth;
+      const scrolled = (sliderContainer.scrollLeft / scrollWidth) * 100;
+      
+      // Update the progress bar width
+      indicatorBar.style.width = scrolled + "%";
+    });
+  </script>
+</section>
     <!-- End pricing-section -->
 
-    <!-- food-section -->
-    <section class="food-section pt-0">
-      <div class="auto-container">
-        <div class="row">
-          <div class="image-column col-xl-4 col-lg-4">
-            <div class="inner-column">
-              <div class="image-box">
-                <figure class="image wow fadeInUp"><img src="images/resource/food-1.jpg" alt=""></figure>
-              </div>
-              <a href="https://www.youtube.com/watch?v=Fvae8nxzVz4" class="play-now-two" data-fancybox="gallery"
-                data-caption=""> <i class="icon fa fa-play" aria-hidden="true"></i> <span class="ripple"></span> </a>
-              <div class="quote-box">
-                <div class="icon-box"><i class="flaticon-quotation"></i></div>
-                <div class="text">Excellent service and heartfelt hospitality are the true strength behind Hotel
-                  Havana’s reputation and trust."
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="content-column col-xl-8">
-            <div class="inner-column">
-              <div class="sec-title"> <span class="sub-title">EAT FROM THE LAND</span>
-                <h2>Enjoy Food and Even<br>
-                  Better Hospitality</h2>
-                <div class="text">
-                  At Hotel Havana, we don't just serve food — we serve memories. Every dish is crafted with carefully
-                  selected flavors, and every service is delivered with a personal touch.
-                  Your happiness and satisfaction are our top priorities.
 
-                </div>
-                <div class="healthy-food">
-                  <div class="food-list">
-                    <h4 class="title">Restaurant</h4>
-                    <ul>
-                      <li><i class="fa-regular fa-square-check"></i>Healthy Food</li>
-                      <li><i class="fa-regular fa-square-check"></i>Award-winning Restaurant</li>
-                      <li><i class="fa-regular fa-square-check"></i>Individually Styled Bedrooms</li>
-                    </ul>
-                  </div>
-                  <div class="food-list two">
-                    <h4 class="title">SPA & Wellness</h4>
-                    <ul>
-                      <li><i class="fa-regular fa-square-check"></i>Healthy Food</li>
-                      <li><i class="fa-regular fa-square-check"></i>Award-winning Restaurant</li>
-                      <li><i class="fa-regular fa-square-check"></i>Individually Styled Bedrooms</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="image-box">
-                  <figure class="image overlay-anim"><img src="images/resource/food-list.jpg" alt=""></figure>
-                  <figure class="image overlay-anim"><img src="images/resource/food-list-2.jpg" alt=""></figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End food section -->
 
     <!-- call-to-action -->
     <section class="call-to-action pt-0">
       <div class="auto-container">
         <div class="row">
-          <div class="content-colum col-lg-6 col-md-12 col-sm-12">
-            <div class="inner-column wow fadeInLeft">
-              <div class="sec-title"> <span class="sub-title">Call to action</span>
-                <h2>The Thin Escape.</h2>
-              </div>
-              <!-- call-block -->
-              <div class="call-block">
-                <div class="inner-box">
-                  <div class="icon-box"> <i class="flaticon-airplane"></i> </div>
-                  <h4 class="title">Easy & Free Transport</h4>
-                  <div class="text">Hassle-free, complimentary transport service for guests<br> with timely pickups and
-                    smooth drop-offs.
-                  </div>
-                </div>
-              </div>
-              <!-- call-block -->
-              <div class="call-block">
-                <div class="inner-box">
-                  <div class="icon-box"> <i class="flaticon-fast-food"></i> </div>
-                  <h4 class="title">Clean & Fresh Food</h4>
-                  <div class="text">Hygienically prepared, farm-fresh ingredients, <br>flavorful dishes served with care
-                    and quality assurance.
-                  </div>
-                </div>
-              </div>
-              <!-- call-block -->
-         
+      <style>
+  /* Metallic Bronze-Gold Match (#aa8453) */
+  :root {
+    --havana-bronze: #aa8453; 
+    --havana-hover: #8e6d42; /* Hover ke liye thoda dark shade */
+  }
 
-            </div>
-          </div>
+  .call-to-action .sub-title {
+    color: var(--havana-bronze) !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  /* Heading Shine Animation */
+  .shine-heading {
+    background: linear-gradient(to right, #1a1a1a 20%, var(--havana-bronze) 50%, #1a1a1a 80%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: bronzeShine 3s linear infinite;
+    font-weight: 800;
+  }
+
+  @keyframes bronzeShine {
+    to { background-position: 200% center; }
+  }
+
+  /* --- Icon Hover Effect --- */
+  .call-to-action .icon-box i {
+    color: var(--havana-bronze) !important;
+    transition: all 0.4s ease; /* Smooth transition */
+  }
+
+  /* Jab poore block par hover ho toh icon ka color badle */
+  .call-to-action .call-block:hover .icon-box i {
+    color: var(--havana-hover) !important;
+    transform: scale(1.2) rotate(5deg); /* Thoda zoom aur rotate effect */
+  }
+
+  .call-to-action .call-block .title {
+    color: var(--havana-bronze);
+    font-weight: 700;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover par title ka color bhi thoda dark ho jaye */
+  .call-to-action .call-block:hover .title {
+    color: var(--havana-hover);
+  }
+
+  .call-to-action .call-block .text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+  }
+
+  /* Button Styling */
+  .call-to-action .form-submit button {
+    background: var(--havana-bronze) !important;
+    color: #fff !important;
+    border: none !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+
+  .call-to-action .form-submit button:hover {
+    background: var(--havana-hover) !important;
+    transform: translateY(-2px);
+  }
+</style>
+
+<div class="content-colum col-lg-6 col-md-12 col-sm-12">
+  <div class="inner-column wow fadeInLeft">
+    <div class="sec-title"> 
+      <span class="sub-title">Superior Hospitality</span>
+      <h2 class="shine-heading">Hotel Havana Gorakhpur</h2>
+    </div>
+    
+    <div class="call-block" style="margin-bottom: 25px; cursor: pointer;">
+      <div class="inner-box">
+        <div class="icon-box"> <i class="fa fa-gem"></i> </div>
+        <h4 class="title">Luxury & Serenity</h4>
+        <div class="text">
+          Experience a luxurious and tranquil atmosphere at <strong>Hotel Havana</strong>, away from the city's hustle and bustle.
+        </div>
+      </div>
+    </div>
+    
+    <div class="call-block" style="cursor: pointer;">
+      <div class="inner-box">
+        <div class="icon-box"> <i class="fa fa-handshake"></i> </div>
+        <h4 class="title">Trusted Excellence</h4>
+        <div class="text">
+          Highest hygiene standards and our professional staff are our hallmarks at <strong>Hotel Havana Gorakhpur</strong>.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
           <div class="col-lg-6 booking-form-column">
             <div class="inner-column wow fadeInRight" data-wow-delay="200ms">
               <div class="sec-title"> <span class="sub-title">ROOMS & SUITES</span>
@@ -950,10 +1182,10 @@
                   <!-- Recent Post -->
                   <article class="recent-post">
                     <div class="inner">
-                      <div class="post-info"><i class="fas fa-phone"></i> 1800-121-3637</div>
+                      <div class="post-info"><i class="fas fa-phone"></i> +919451903390</div>
                     <div class="post-info">
   <i class="fa fa-envelope"></i> 
-  <a href="mailto:hotelhavana97@gmail.com">hotelhavana97@gmail.com</a>
+  <a href="mailto:contact@hotelhavana.in">contact@hotelhavana.in</a>
 </div>
 
                       <div class="post-info"><i class="fas fa-location"></i> Gorakhpur
