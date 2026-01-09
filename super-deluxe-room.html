@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <title>Super Deluxe Room | Hotel Havana - Luxury Redefined in Gorakhpur</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Stylesheets -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-dark.css" rel="stylesheet">
+  <link href="css/flatpickr.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <!-- Responsive -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+ <style>
+    :root { 
+        --gold: #c5a059; 
+        --dark: #1a1a1b; 
+        --soft-bg: #fdfbf7; 
+        --shadow-light: 0 5px 20px rgba(0,0,0,0.05);
+    }
+    
+    /* Compact Section Padding */
+    .room-details-section { 
+        background: var(--soft-bg); 
+        padding: 50px 0; 
+        font-family: 'Montserrat', sans-serif; 
+    }
+    .luxury-font { font-family: 'Playfair Display', serif; }
+    
+    /* Header Area */
+    .room-header { margin-bottom: 35px; }
+    .premium-title { font-size: 46px; font-weight: 700; color: var(--dark); margin: 8px 0; }
+    .gold-divider { width: 50px; height: 3px; background: var(--gold); margin: 15px 0; }
+    .subtitle-text { color: var(--gold); font-weight: 700; letter-spacing: 3px; font-size: 12px; text-transform: uppercase; }
+
+    /* Gallery */
+    .room-gallery-premium { 
+        border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.1); 
+        margin-bottom: 35px; border: 6px solid #fff;
+    }
+
+    /* Content Card with Gold Highlights */
+    .info-card-premium { 
+        background: #fff; border-radius: 18px; padding: 35px; 
+        box-shadow: var(--shadow-light); margin-bottom: 30px; 
+        border-left: 4px solid var(--gold);
+    }
+    .highlight-gold { color: var(--gold); font-weight: 700; }
+
+    /* Header Area - Laptop Optimized */
+    .room-header { margin-bottom: 30px; }
+    .premium-title { font-size: 42px; font-weight: 700; color: var(--dark); margin: 8px 0; line-height: 1.2; }
+    .gold-divider { width: 50px; height: 3px; background: var(--gold); margin: 15px 0; }
+    .subtitle-text { color: var(--gold); font-weight: 700; letter-spacing: 3px; font-size: 12px; text-transform: uppercase; }
+
+    /* Gallery - Better Proportions */
+    .room-gallery-premium { 
+        border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.1); 
+        margin-bottom: 30px; border: 6px solid #fff;
+    }
+
+    /* Premium Gallery Enhancements */
+    .premium-gallery-section .gallery-overlay {
+        position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+        background: linear-gradient(45deg, rgba(0,0,0,0.3), transparent);
+        display: flex; justify-content: space-between; align-items: flex-start;
+        padding: 25px;
+    }
+    .luxury-badge {
+        background: linear-gradient(135deg, var(--gold), #d4af37);
+        color: #000; padding: 8px 16px; border-radius: 25px;
+        font-size: 12px; font-weight: 700; letter-spacing: 1px;
+        display: flex; align-items: center; gap: 8px;
+    }
+    .room-rating {
+        color: var(--gold); font-size: 16px;
+        display: flex; gap: 3px;
+    }
+
+    /* Luxury Content Cards */
+    .luxury-gradient {
+        background: linear-gradient(135deg, #fff 0%, #fdfbf7 100%);
+        border: 1px solid rgba(197, 160, 89, 0.2);
+    }
+    .premium-header .luxury-icon {
+        width: 60px; height: 60px; background: linear-gradient(135deg, var(--gold), #d4af37);
+        border-radius: 50%; display: flex; align-items: center; justify-content: center;
+        margin-bottom: 20px; color: #000; font-size: 24px;
+    }
+    .premium-divider {
+        width: 80px; height: 2px; background: linear-gradient(90deg, var(--gold), transparent);
+        margin-bottom: 20px;
+    }
+    .luxury-highlights .highlight-item {
+        display: flex; align-items: center; gap: 12px;
+        padding: 15px; background: rgba(197, 160, 89, 0.1);
+        border-radius: 12px; margin-bottom: 15px;
+    }
+    .luxury-highlights .highlight-item i {
+        color: var(--gold); font-size: 18px;
+    }
+    .luxury-highlights .highlight-item span {
+        font-weight: 600; color: #333;
+    }
+
+    /* Ultra-Premium Amenities */
+    .section-header .luxury-divider {
+        width: 100px; height: 3px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        margin: 15px auto;
+    }
+    .amenity-item-premium {
+        background: linear-gradient(135deg, #fff 0%, #fdfbf7 100%);
+        padding: 30px 20px; border-radius: 20px;
+        border: 1px solid rgba(197, 160, 89, 0.15);
+        text-align: center; transition: all 0.4s ease;
+        height: 100%; position: relative; overflow: hidden;
+    }
+    .amenity-item-premium::before {
+        content: ''; position: absolute; top: 0; left: -100%;
+        width: 100%; height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(197, 160, 89, 0.1), transparent);
+        transition: 0.6s;
+    }
+    .amenity-item-premium:hover::before {
+        left: 100%;
+    }
+    .amenity-item-premium:hover {
+        transform: translateY(-10px);
+        border-color: var(--gold);
+        box-shadow: 0 15px 35px rgba(197, 160, 89, 0.2);
+    }
+    .amenity-item-premium i {
+        font-size: 36px; color: var(--gold); margin-bottom: 15px;
+        display: block; position: relative; z-index: 2;
+    }
+    .amenity-item-premium h6 {
+        font-size: 14px; font-weight: 700; color: #1a1a1b;
+        margin: 0 0 8px 0; text-transform: uppercase;
+        letter-spacing: 1px; position: relative; z-index: 2;
+    }
+    .amenity-item-premium span {
+        font-size: 11px; color: #666; font-weight: 500;
+        position: relative; z-index: 2;
+    }
+
+    /* Laptop Specific Optimizations */
+    @media (min-width: 992px) and (max-width: 1400px) {
+        .auto-container { max-width: 1140px; }
+        .premium-title { font-size: 38px; }
+        .info-card-premium { padding: 30px; }
+        .info-card-premium h3 { font-size: 24px !important; }
+        .info-card-premium p { font-size: 16px !important; line-height: 1.7; }
+        .amenity-item-new { padding: 22px 12px; }
+        .amenity-item-new i { font-size: 28px; }
+        .booking-card-dark { padding: 30px 25px; }
+        .room-gallery-premium img { height: 400px !important; }
+        .room-details-section { padding: 60px 0; }
+    }
+
+    /* Large Laptop/Desktop */
+    @media (min-width: 1400px) {
+        .auto-container { max-width: 1320px; }
+        .premium-title { font-size: 44px; }
+        .info-card-premium { padding: 40px; }
+        .booking-card-dark { padding: 40px 35px; }
+        .room-gallery-premium img { height: 450px !important; }
+    }
+
+    /* Ultra-Premium Booking Card */
+    .booking-card-ultra-premium {
+        background: linear-gradient(135deg, #1a1a1b 0%, #2d2d2e 100%);
+        padding: 40px 35px; border-radius: 30px; color: #fff;
+        position: sticky; top: 100px;
+        box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+        border: 2px solid rgba(197, 160, 89, 0.3);
+        overflow: hidden; position: relative;
+    }
+    .booking-card-ultra-premium::before {
+        content: ''; position: absolute; top: -50%; left: -50%;
+        width: 200%; height: 200%; background: radial-gradient(circle, rgba(197, 160, 89, 0.05) 0%, transparent 70%);
+        animation: shimmer 8s infinite;
+    }
+    @keyframes shimmer {
+        0%, 100% { transform: rotate(0deg); }
+        50% { transform: rotate(180deg); }
+    }
+
+    /* Premium Pricing Header */
+    .pricing-header .luxury-crown {
+        width: 50px; height: 50px; background: linear-gradient(135deg, var(--gold), #d4af37);
+        border-radius: 50%; display: flex; align-items: center; justify-content: center;
+        margin: 0 auto 15px; color: #000; font-size: 20px;
+    }
+    .price-display {
+        font-size: 36px; color: var(--gold); margin: 10px 0 5px;
+        text-shadow: 0 2px 10px rgba(197, 160, 89, 0.3);
+    }
+    .price-subtitle {
+        color: #ccc; font-size: 14px; display: block;
+    }
+    .premium-badges {
+        display: flex; gap: 10px; justify-content: center;
+    }
+    .badge-luxury, .badge-guarantee {
+        padding: 6px 12px; border-radius: 20px; font-size: 10px;
+        font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+    }
+    .badge-luxury {
+        background: linear-gradient(135deg, var(--gold), #d4af37); color: #000;
+    }
+    .badge-guarantee {
+        background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    /* Premium Form Elements */
+    .form-group-premium {
+        margin-bottom: 25px; position: relative; z-index: 2;
+    }
+    .input-label-premium {
+        font-size: 12px; font-weight: 700; color: var(--gold);
+        text-transform: uppercase; letter-spacing: 1.5px;
+        margin-bottom: 10px; display: block;
+    }
+    .premium-field-ultra {
+        background: rgba(255,255,255,0.08) !important;
+        border: 2px solid rgba(255,255,255,0.1) !important;
+        color: #fff !important; height: 55px; border-radius: 15px;
+        font-size: 14px; padding: 0 18px; transition: all 0.3s ease;
+    }
+    .premium-field-ultra:focus {
+        border-color: var(--gold) !important;
+        box-shadow: 0 0 20px rgba(197, 160, 89, 0.2) !important;
+        background: rgba(255,255,255,0.12) !important;
+    }
+
+    /* Premium Action Buttons */
+    .btn-reserve-premium {
+        background: linear-gradient(135deg, var(--gold), #d4af37);
+        color: #000; font-weight: 700; padding: 18px 20px;
+        border-radius: 15px; width: 100%; border: none;
+        font-size: 14px; text-transform: uppercase;
+        letter-spacing: 1px; transition: all 0.3s ease;
+        display: flex; align-items: center; justify-content: center; gap: 10px;
+    }
+    .btn-reserve-premium:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(197, 160, 89, 0.4);
+        background: linear-gradient(135deg, #d4af37, var(--gold));
+    }
+    .btn-whatsapp-premium {
+        background: linear-gradient(135deg, #25d366, #20b358);
+        color: #fff; font-weight: 700; padding: 18px 20px;
+        border-radius: 15px; width: 100%; border: none;
+        font-size: 14px; text-transform: uppercase;
+        letter-spacing: 1px; transition: all 0.3s ease;
+        display: flex; align-items: center; justify-content: center; gap: 10px;
+        text-decoration: none;
+    }
+    .btn-whatsapp-premium:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        color: #fff; text-decoration: none;
+    }
+
+    /* Luxury Benefits */
+    .benefits-section {
+        margin-top: 30px; padding-top: 25px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        position: relative; z-index: 2;
+    }
+    .benefits-header h6 {
+        color: var(--gold); font-size: 16px; font-weight: 700;
+        text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;
+    }
+    .benefits-divider {
+        width: 60px; height: 2px;
+        background: linear-gradient(90deg, var(--gold), transparent);
+        margin-bottom: 20px;
+    }
+    .benefit-item {
+        display: flex; align-items: center; gap: 12px;
+        margin-bottom: 12px; padding: 8px 0;
+    }
+    .benefit-item i {
+        color: var(--gold); font-size: 14px; width: 20px;
+    }
+    .benefit-item span {
+        color: #ccc; font-size: 13px; font-weight: 500;
+    }
+
+    /* Security Badge */
+    .security-badge {
+        margin-top: 25px; padding-top: 20px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        text-align: center; position: relative; z-index: 2;
+    }
+    .security-badge i {
+        color: var(--gold); margin-right: 8px; font-size: 16px;
+    }
+    .security-badge span {
+        color: #999; font-size: 11px; font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+        .premium-title { font-size: 32px; text-align: center; }
+        .room-header { text-align: center; }
+        .gold-divider { margin: 20px auto; }
+        .info-card-premium { padding: 20px; border-radius: 15px; }
+        .amenity-item-new { padding: 20px 10px; }
+        .amenity-item-new i { font-size: 28px; margin-bottom: 12px; }
+        .amenity-item-new h6 { font-size: 10px; }
+        .booking-card-dark { padding: 25px 20px; border-radius: 20px; }
+        .room-gallery-premium img { height: 350px !important; }
+    }
+
+    @media (max-width: 576px) {
+        .room-details-section { padding: 30px 0; }
+        .premium-title { font-size: 28px; }
+        .subtitle-text { font-size: 10px; letter-spacing: 2px; }
+        .info-card-premium { padding: 15px; margin-bottom: 20px; }
+        .info-card-premium h3 { font-size: 22px !important; }
+        .info-card-premium p { font-size: 16px !important; }
+        .amenity-item-new { padding: 15px 8px; }
+        .amenity-item-new i { font-size: 24px; margin-bottom: 10px; }
+        .amenity-item-new h6 { font-size: 9px; }
+        .booking-card-dark { padding: 20px 15px; }
+        .btn-reserve, .btn-whatsapp { padding: 15px; font-size: 12px; }
+        .room-gallery-premium img { height: 280px !important; }
+        .spec-number { font-size: 24px !important; }
+        .spec-label { font-size: 9px !important; }
+    }
+
+    /* Sidebar Form */
+    .booking-card-dark {
+        background: var(--dark); padding: 35px 25px; border-radius: 25px; 
+        color: #663535; position: sticky; top: 100px; box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+    .input-label { font-size: 11px; font-weight: 700; color: var(--gold); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px; display: block; }
+    .premium-field { 
+        background: rgba(255,255,255,0.08) !important; border: 1px solid #333 !important; 
+        color: #fff !important; height: 50px; border-radius: 10px; margin-bottom: 20px; font-size: 14px;
+    }
+    
+    .btn-reserve { background: var(--gold); color: #fff; font-weight: 700; padding: 15px; border-radius: 10px; width: 100%; border: none; cursor: pointer; text-transform: uppercase; font-size: 14px; }
+    .btn-whatsapp { background: #25d366; color: #fff; font-weight: 700; padding: 15px; border-radius: 10px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; }
+
+    .map-container-new { border-radius: 20px; overflow: hidden; border: 4px solid #fff; box-shadow: var(--shadow-light); }
+
+.premium-field option {
+    background-color: #1a1a1b;
+    color: #fff;
+    padding: 10px;
+}
+
+
+.premium-field:focus {
+    background-color: rgba(255,255,255,0.1) !important;
+    color: #fff !important;
+}
+
+
+select.premium-field {
+    background-color: #1a1a1b !important; 
+}
+</style>
+
+</head>
+
+<body>
+  <div class="page-wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <!-- Main Header-->
+    <header class="main-header header-style-two">
+      <div class="auto-container">
+        <div class="header-top">
+          <div class="inner-box">
+            <!-- top-left -->
+            <div class="top-left">
+             <span>
+  <a href="tel:+919451903390" style="color:#adadad; text-decoration:none;">
+    <i class="fas fa-mobile-alt" style="color:#adadad;"></i>
+    +91 94519 03390
+  </a>
+</span>
+
+            </div>
+            <!-- Top-right -->
+            <div class="top-right">
+              <ul class="social-icon-one">
+                <li>Follow Us :</li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Main box -->
+        <div class="main-box">
+          <div class="logo-box">
+
+            <div class="logo"><a href="#">
+                
+            <a href="index.html"><img src="images/logo havana.PNG" width="120px" height="50px"  alt="logo"></a>
+        </div>
+              
+          </div>
+          <!--Nav Box-->
+          <div class="nav-outer">
+            <nav class="nav main-menu">
+              <ul class="navigation">
+                <li class="dropdown"><a href="index.html">Home</a>
+                  <!--- <ul>
+                    <li><a href="index.html">Home page 01</a></li>
+                    <li><a href="index-2.html">Home page 02</a></li>
+                    <li class="dropdown"><a href="#">New Home</a>
+                      <ul>
+                        <li><a href="index-3.html">Home page 03</a></li>
+                        <li><a href="index-4.html">Home page 04</a></li>
+                        <li><a href="index-5.html">Home page 05</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a href="#">Single Styles</a>
+                      <ul>
+                        <li><a href="index-1-single.html">Single Style One</a></li>
+                        <li><a href="index-2-single.html">Single Style Two</a></li>
+                        <li><a href="index-3-single.html">Single Style Three</a></li>
+                        <li><a href="index-4-single.html">Single Style Four</a></li>
+                        <li><a href="index-5-single.html">Single Style Five</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a href="#">Dark Styles</a>
+                      <ul>
+                        <li><a href="index-1-dark.html">Dark Style One</a></li>
+                        <li><a href="index-2-dark.html">Dark Style Two</a></li>
+                        <li><a href="index-3-dark.html">Dark Style Three</a></li>
+                        <li><a href="index-4-dark.html">Dark Style Four</a></li>
+                        <li><a href="index-5-dark.html">Dark Style Five</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="index-1-rtl.html">RTL Style One</a></li> 
+                  </ul>-->
+                </li>
+
+                <li><a href="page-about.html">About</a> </li>
+
+                <li class="dropdown"><a href="page-rooms.html">Rooms</a>
+                  <ul>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">Rooms and Suits</a></li>
+                    <li><a href="#">Room Details</a></li>
+                  </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a>
+                  <!--- <ul>
+                    <li><a href="page-about.html">About</a></li>
+                    <li><a href="page-contact.html">Contact</a></li>
+                    <li><a href="page-faq.html">Faq</a></li>
+                    <li><a href="page-pricing.html">Pricing</a></li>
+                    <li><a href="page-testimonial.html">Testimonials</a></li>
+                    <li><a href="page-404.html">404</a></li>
+                    <li class="dropdown"><a href="#">Team</a>
+                      <ul>
+                        <li><a href="page-team.html">Team List</a></li>
+                        <li><a href="page-team-details.html">Team Details</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a href="#">Shop</a>
+                      <ul>
+                        <li><a href="shop-products.html">Products</a></li>
+                        <li><a href="shop-products-sidebar.html">Products with Sidebar</a></li>
+                        <li><a href="shop-product-details.html">Product Details</a></li>
+                        <li><a href="shop-cart.html">Cart</a></li>
+                        <li><a href="shop-checkout.html">Checkout</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="elements.html">Elements</a></li>
+                  </ul> -->
+                </li>
+                <!--- <li class="dropdown"><a href="#">News</a>
+                  <ul>
+                    <li><a href="news-grid.html">News Grid</a></li>
+                    <li><a href="news-details.html">News Details</a></li>
+                  </ul>
+                </li> -->
+                <li><a href="page-contact.html">Contact</a></li>
+              </ul>
+            </nav>
+            <!-- Main Menu End-->
+          </div>
+          <!---->
+          <div class="outer-box">
+            <!---  <button class="search-btn">
+              <img src="images/icons/search.png" alt="" />
+            </button> -->
+            <div class="mobile-nav-toggler"><i class="icon fa fa-bars"></i></div>
+            <!-- Mobile Nav toggler -->
+          </div>
+        </div>
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+          <div class="menu-backdrop"></div>
+          <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+          <nav class="menu-box">
+            <div class="upper-box">
+              <div class="logo">
+                 <a href="index.html"><img src="images/logo havana.PNG" width="120px" height="50px"  alt="logo"></a>
+                </div>
+              <!----    <div class="nav-logo"><a href="#"><img src="images/logo-22.png" alt=""></a></div> -->
+              <div class="close-btn"><i class="icon fa fa-times"></i></div>
+            </div>
+            <ul class="navigation clearfix">
+              <!--Keep This Empty / Menu will come through Javascript-->
+            </ul>
+            <ul class="contact-list-one">
+              <li>
+                <!-- Contact Info Box -->
+                <div class="contact-info-box">
+                  <i class="icon lnr-icon-phone-handset"></i>
+                  <span class="title">Call Now</span>
+                  <a href="tel:+919451903390">+919451903390</a>
+                </div>
+              </li>
+             <li>
+  <!-- Contact Info Box -->
+  <div class="contact-info-box">
+    <span class="icon lnr-icon-envelope1"></span>
+    <span class="title">Send Email</span>
+    <a href="mailto:contact@hotelhavana.in">contact@hotelhavana.in</a>
+  </div>
+</li>
+
+             
+            </ul>
+            <ul class="social-links">
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </nav>
+        </div><!-- End Mobile Menu -->
+        <!-- Header Search -->
+        <div class="search-popup">
+          <span class="search-back-drop"></span>
+          <button class="close-search"><span class="fa fa-times"></span></button>
+          <div class="search-inner">
+            <form method="post" action="https://html.kodesolution.com/2023/hoexr-html/index.html">
+              <div class="form-group">
+                <input type="search" name="search-field" value="" placeholder="Search..." required="">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- End Header Search -->
+
+        <!-- Sticky Header  -->
+        <div class="sticky-header">
+          <div class="auto-container">
+            <div class="inner-container">
+              <!--Logo-->
+
+               <div class="logo">
+                
+            <a href="index.html"><img src="images/logo havana.PNG" width="120px" height="50px"  alt="logo"></a>
+        </div>
+              <!----     <div class="logo">
+                <a href="index.html"><img src="images/logo-22.png" alt=""></a>
+              </div> -->
+              <!--Right Col-->
+              <div class="nav-outer">
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                  <div class="navbar-collapse show collapse clearfix">
+                    <ul class="navigation clearfix">
+                      <!--Keep This Empty / Menu will come through Javascript-->
+                    </ul>
+                  </div>
+                </nav><!-- Main Menu End-->
+                <!--Mobile Navigation Toggler-->
+                <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Sticky Menu -->
+      </div>
+    </header>
+    <!--End Main Header -->
+<section class="page-title" style="background-image: url(images/background/page-title-bg.png);">
+  <div class="auto-container">
+    <div class="title-outer text-center">
+      <h1 class="title">Super Deluxe Room</h1>
+      <ul class="page-breadcrumb">
+        <li><a href="index.html">Home</a></li>
+       
+        <li>Super Deluxe Room</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section class="room-details-section">
+    <div class="auto-container">
+        <div class="row">
+            
+            <div class="col-lg-8">
+                <div class="room-header">
+                    <span class="subtitle-text">LUXURY MEETS COMFORT & ELEGANCE</span>
+                    <h2 class="premium-title luxury-font">Super Deluxe Room</h2>
+                    <div class="gold-divider"></div>
+                </div>
+
+                <!-- Premium Image Gallery Slider -->
+                <div class="premium-gallery-section mb-4">
+                    <div class="room-gallery-premium position-relative">
+                        <img src="images/gallery/super-deluxe-havana.jpg" alt="Super Deluxe Room Hotel Havana Gorakhpur" style="width: 100%; height: 450px; object-fit: cover;">
+                        <div class="gallery-overlay">
+                            <div class="luxury-badge">
+                                <i class="fa-solid fa-crown"></i>
+                                <span>SUPER DELUXE</span>
+                            </div>
+                            <div class="room-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Room Description -->
+                <div class="info-card-premium luxury-gradient">
+                    <div class="premium-header mb-4">
+                        <div class="luxury-icon">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3 class="luxury-font" style="font-size: 28px; color: #1a1a1b; margin-bottom: 10px;">Unparalleled Luxury Experience</h3>
+                        <div class="premium-divider"></div>
+                    </div>
+                    <p style="font-size: 18px; line-height: 1.9; color: #555; margin-bottom: 20px;">
+                        Immerse yourself in the epitome of sophistication with our <span class="highlight-gold">Super Deluxe Room</span>. This meticulously crafted sanctuary combines contemporary elegance with timeless luxury, offering an extraordinary retreat for the most discerning guests.
+                    </p>
+                    <p style="font-size: 18px; line-height: 1.9; color: #555;">
+                        Every element has been thoughtfully curated - from the <span class="highlight-gold">Italian marble bathroom</span> to the <span class="highlight-gold">panoramic city views</span>, creating an ambiance that transcends ordinary hospitality into an unforgettable experience.
+                    </p>
+                    
+                    <!-- Premium Features Highlight -->
+                    <div class="luxury-highlights mt-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="highlight-item">
+                                    <i class="fa-solid fa-medal"></i>
+                                    <span>Award-Winning Design</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="highlight-item">
+                                    <i class="fa-solid fa-leaf"></i>
+                                    <span>Eco-Luxury Certified</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ultra-Premium Amenities Showcase -->
+                <div class="premium-amenities-section mb-5">
+                    <div class="section-header text-center mb-4">
+                        <h3 class="luxury-font" style="font-size: 32px; color: #1a1a1b; margin-bottom: 15px;">Exclusive Amenities & Services</h3>
+                        <div class="luxury-divider mx-auto"></div>
+                        <p style="color: #666; font-size: 16px;">Curated for the ultimate luxury experience</p>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="amenity-item-premium"><i class="fa-solid fa-crown"></i><h6>Royal Suite Design</h6><span>Palatial Interiors</span></div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="amenity-item-premium"><i class="fa-solid fa-snowflake"></i><h6>Smart Climate</h6><span>Personalized Control</span></div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="amenity-item-premium"><i class="fa-solid fa-wifi"></i><h6>Fiber Optic WiFi</h6><span>Ultra High-Speed</span></div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="amenity-item-premium"><i class="fa-solid fa-concierge-bell"></i><h6>Butler Service</h6><span>24/7 Personal Care</span></div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="amenity-item-premium"><i class="fa-solid fa-tv"></i><h6>75" OLED TV</h6><span>Premium Entertainment</span></div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="amenity-item-premium"><i class="fa-solid fa-gem"></i><h6>Marble Bathroom</h6><span>Italian Carrara</span></div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="amenity-item-premium"><i class="fa-solid fa-champagne-glasses"></i><h6>Premium Bar</h6><span>Curated Selection</span></div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="amenity-item-premium"><i class="fa-solid fa-shield-halved"></i><h6>Biometric Safe</h6><span>Advanced Security</span></div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="amenity-item-premium"><i class="fa-solid fa-utensils"></i><h6>Gourmet Dining</h6><span>24/7 Room Service</span></div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="amenity-item-premium"><i class="fa-solid fa-car-side"></i><h6>Luxury Transfer</h6><span>Premium Vehicles</span></div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="amenity-item-premium"><i class="fa-solid fa-spa"></i><h6>Spa Access</h6><span>Wellness Center</span></div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="amenity-item-premium"><i class="fa-solid fa-dumbbell"></i><h6>Elite Fitness</h6><span>Personal Trainer</span></div>
+                        </div>
+                    </div>
+                </div>
+
+           
+             
+            </div>
+
+            <div class="col-lg-4">
+                <div class="booking-card-ultra-premium">
+                    <!-- Premium Pricing Header -->
+                    <div class="pricing-header text-center mb-4">
+                        <div class="luxury-crown">
+                            <i class="fa-solid fa-crown"></i>
+                        </div>
+                        <h4 class="luxury-font price-display">₹6,999</h4>
+                        <span class="price-subtitle">per night + taxes</span>
+                        <div class="premium-badges mt-3">
+                            <span class="badge-luxury">BEST VALUE</span>
+                            <span class="badge-guarantee">PRICE MATCH</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Booking Form -->
+                    <form id="bookingForm" class="premium-form">
+                        <div class="form-group-premium">
+                            <label class="input-label-premium">Select Your Suite</label>
+                            <select class="form-control premium-field-ultra" id="room_select">
+                                <option>Executive Room - ₹8,999</option>
+                                <option>Deluxe Room - ₹5,999</option>
+                                <option selected>Super Deluxe Room - ₹6,999</option>
+                                <option>Twin Room - ₹5,499</option>
+                                <option>Presidential Suite - ₹15,999</option>
+                            </select>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <label class="input-label-premium">Chack in</label>
+                                <input type="date" class="form-control premium-field-ultra" id="check_in">
+                            </div>
+                            <div class="col-6">
+                                <label class="input-label-premium">Chack out</label>
+                                <input type="date" class="form-control premium-field-ultra" id="check_out">
+                            </div>
+                        </div>
+                        <div class="form-group-premium">
+                            <label class="input-label-premium">Contact Number</label>
+                            <input type="tel" class="form-control premium-field-ultra" id="phone" placeholder="+91 Your Mobile Number">
+                        </div>
+                        
+                        <!-- Premium Action Buttons -->
+                        <div class="booking-actions">
+                            <button type="button" onclick="window.location.href='tel:+919451903390'" class="btn-reserve-premium mb-3">
+                                <i class="fa-solid fa-phone"></i>
+                                Reserve Now - Instant Confirmation
+                            </button>
+                            <button type="button" onclick="sendWhatsApp()" class="btn-whatsapp-premium mb-3">
+                                <i class="fab fa-whatsapp"></i>
+                                WhatsApp Concierge
+                            </button>
+                        </div>
+                    </form>
+
+               
+                    <!-- Security Badge -->
+                    <div class="security-badge">
+                        <i class="fa-solid fa-shield-check"></i>
+                        <span>Secure Booking • Instant Confirmation • 24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="faq-section py-5">
+  <div class="container">
+    <h3 class="mb-4 text-center">Frequently Asked Questions</h3>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="faq-item mb-3 p-3 border rounded">
+          <h6 class="mb-2"><strong>Q: What is the Check-in and Check-out time?</strong></h6>
+          <p class="mb-0 text-muted">Check-in is at 12:00 PM and Check-out is at 11:00 AM.</p>
+        </div>
+        <div class="faq-item mb-3 p-3 border rounded">
+          <h6 class="mb-2"><strong>Q: Do you provide complementary breakfast?</strong></h6>
+          <p class="mb-0 text-muted">Yes, breakfast is included with our Super Premium Rooms.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Main Footer -->
+    <footer class="main-footer footer-style-two">
+      <!-- Widgets Section -->
+      <div class="widgets-section">
+        <div class="auto-container">
+          <div class="row">
+            <!-- Footer Column -->
+            <div class="footer-column col-lg-4 col-sm-6">
+              <div class="footer-widget about-widget wow fadeInLeft">
+                <div class="widget-content">
+                  <div class="logo">
+                   <a href="index.html"><img src="images/logo havana.PNG" width="150px" height="60px"  alt="logo"></a>
+                 </div>
+
+                  <!----   <div class="logo"><a href="#"> <img src="images/logo-22.png" alt=""></a></div>-->
+                  <div class="text">"A warm welcome to the finest five-star hotel, <br>'Havana'.At Hotel Elementum, you
+                    will experience<br> a unique blend of luxury, exceptional<br> service, and ultimate comfort.
+                  </div>
+                  <ul class="social-icon-two">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i> </a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Footer Column -->
+            <div class="footer-column col-lg-4 col-sm-6 mb-0">
+              <div class="footer-widget links-widget wow fadeInLeft" data-wow-delay="200ms">
+                <h4 class="widget-title">Services Links</h4>
+                <div class="widget-content">
+                  <ul class="user-links">
+                    <li><a href="index.html"><i class="fa-solid fa-crosshairs"></i>Home</a></li>
+                    <!----  <li><a href="#"><i class="fa-solid fa-crosshairs"></i>Suites</a></li> -->
+                    <!----  <li><a href="#"><i class="fa-solid fa-crosshairs"></i>Restaurant</a></li> -->
+                    <!----<li><a href="#"><i class="fa-solid fa-crosshairs"></i>News</a></li>-->
+                    <li><a href="page-about.html"><i class="fa-solid fa-crosshairs"></i>About Hotel</a></li>
+                    <li><a href="page-rooms.html"><i class="fa-solid fa-crosshairs"></i>Rooms</a></li>
+                    <li><a href="#"><i class="fa-solid fa-crosshairs"></i>Gallery</a></li>
+                    <li><a href="page-contact.html"><i class="fa-solid fa-crosshairs"></i>Contact</a></li>
+                  </ul>
+                  <!----  <ul class="user-links">
+                    <li><a href="#"><i class="fa-solid fa-crosshairs"></i>Rooms</a></li>
+                    <li><a href="#"><i class="fa-solid fa-crosshairs"></i>Wellness</a></li>
+                    <li><a href="#"><i class="fa-solid fa-crosshairs"></i>Spa</a></li>
+                    <li><a href="#"><i class="fa-solid fa-crosshairs"></i>Gallery</a></li>
+                    <li><a href="#"><i class="fa-solid fa-crosshairs"></i>Contact</a></li>
+                  </ul> -->
+                </div>
+              </div>
+            </div>
+            <!-- footer column -->
+            <!----  <div class="footer-column col-lg-3 col-sm-6">
+              <div class="footer-widget news-widget wow fadeInLeft" data-wow-delay="300ms">
+                <h4 class="widget-title">Latest News</h4>
+                <div class="news-info">
+                  <figure class="image overlay-anim"><a href="#"><img src="images/resource/news-info-1.jpg" alt=""></a>
+                  </figure>
+                  <h6 class="title"><a href="#">Quisque at Felis <br>Port Titordga</a></h6>
+                  <span class="date">14 May 2023</span>
+                </div>
+                <div class="news-info">
+                  <figure class="image overlay-anim"><a href="#"><img src="images/resource/news-info-2.jpg" alt=""></a>
+                  </figure>
+                  <h6 class="title"><a href="#">Tips For Picking <br>Vacation</a></h6>
+                  <span class="date">14 May 2023</span>
+                </div>
+              </div>
+            </div> -->
+            <!-- Footer Column -->
+            <div class="footer-column col-lg-4 col-sm-6">
+              <div class="footer-widget blog-widget wow fadeInLeft" data-wow-delay="400ms">
+                <h4 class="widget-title">Information</h4>
+                <div class="widget-content">
+                  <!-- Recent Post -->
+                  <article class="recent-post">
+                    <div class="inner">
+                      <div class="post-info"><i class="fas fa-phone"></i> +919451903390</div>
+                    <div class="post-info">
+  <i class="fa fa-envelope"></i> 
+  <a href="mailto:contact@hotelhavana.in">contact@hotelhavana.in</a>
+</div>
+
+                                       <div class="post-info">
+  <i class="fas fa-location"></i>
+  <a 
+    href="https://www.google.com/maps/place/Havana+Hotel+Gorakhpur/@26.7350642,83.3776136,17z"
+    target="_blank"
+    style="color: inherit; text-decoration: none;"
+  >
+    Havana Hotel,
+    Deoria Bypass Road,
+    Near LIC Office,
+    Taramandal,
+    Gorakhpur, Uttar Pradesh – 273016
+  </a>
+</div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+<div style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
+  <a class="scroll-to-top scroll-to-target" data-target="html" style="cursor: pointer;">
+    <span class="fa fa-arrow-up" style="font-size: 22px; background: #e16912; color: #fff; padding: 10px 12px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.3);"></span>
+  </a>
+</div>
+
+      <!--  Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="auto-container">
+          <div class="inner-container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="copyright-text">© Copyrights Hotel Havana.</div>
+            <div style="display: inline-flex; align-items: center; gap: 10px;">
+                        <span style="font-size: 15px;">Developed by <a href="https://www.shineinfosolutions.in/"
+  style="display:inline; color: rgb(225, 105, 18);">Shine Infosolutions</a></span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--End Main Footer -->
+  </div><!-- End Page Wrapper -->
+<script>
+function sendWhatsApp() {
+    const room = document.getElementById('room_select').value;
+    const cin = document.getElementById('check_in').value;
+    const cout = document.getElementById('check_out').value;
+    const ph = document.getElementById('phone').value;
+
+    if(!ph) { alert("Please enter mobile number."); return; }
+
+    const msg = `*New Booking Inquiry - Hotel Havana*%0a%0aCategory: ${room}%0aCheck-In: ${cin}%0aCheck-Out: ${cout}%0aContact: ${ph}`;
+    window.open(`https://wa.me/919451903390?text=${msg}`, '_blank');
+}
+</script>
+  <!--script-->
+  <script>
+    const form = document.getElementById('form');
+    const result = document.getElementById('result');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+      result.innerHTML = "Please wait..."
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: json
+      })
+        .then(async (response) => {
+          let json = await response.json();
+          if (response.status == 200) {
+            result.innerHTML = "Form submitted successfully";
+          } else {
+            console.log(response);
+            result.innerHTML = json.message;
+          }
+        })
+        .catch(error => {
+          console.log(error);
+          result.innerHTML = "Something went wrong!";
+        })
+        .then(function () {
+          form.reset();
+          setTimeout(() => {
+            result.style.display = "none";
+          }, 3000);
+        });
+    });
+  </script>
+
+  <!--script end-->
+  <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.fancybox.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/slick-animation.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/appear.js"></script>
+  <script src="js/mixitup.js"></script>
+  <script src="js/flatpickr.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/script.js"></script>
+  
+</body>
+
+
+</html>
