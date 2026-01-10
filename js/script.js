@@ -78,10 +78,11 @@ var THEMEMASCOT = {};
 	headerStyle();
 
 	//Submenu Dropdown Toggle
-	if($('.main-header li.dropdown ul').length){
-		$('.main-header .navigation li.dropdown').append('<div class="dropdown-btn"></div>');
-		//Megamenu Toggle
-	}
+	if ($('.main-header li.dropdown ul').length) {
+   $('.main-header .navigation li.dropdown')
+   .append('<div class="dropdown-btn"><i class="fa fa-angle-down"></i></div>');
+}
+
 
 	//Hidder bar
 	if ($('.hidden-bar').length){
