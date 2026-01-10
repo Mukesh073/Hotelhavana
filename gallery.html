@@ -62,10 +62,101 @@
             display: block;
         }
 
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+        }
 
+        .modal-content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+        }
 
+        .modal-image {
+            max-width: 90%;
+            max-height: 90vh;
+            object-fit: contain;
+            background: transparent;
+            box-shadow: 0 0 50px rgba(0,0,0,0.8);
+        }
 
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 10000;
+            background: rgba(0,0,0,0.5);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
+        .close:hover {
+            color: #bbb;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: 60px;
+            height: 60px;
+            margin-top: -30px;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            background: rgba(0,0,0,0.6);
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            user-select: none;
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .next {
+            right: 30px;
+        }
+
+        .prev {
+            left: 30px;
+        }
+
+        .prev:hover, .next:hover {
+            background: rgba(0,0,0,0.8);
+            border-color: rgba(255,255,255,0.6);
+            transform: scale(1.1);
+        }
+
+        .gallery-img {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
 
     </style>
 </head>
@@ -329,96 +420,54 @@
             <div class="row g-4" id="gallery">
                 <!-- deluxe -->
 
-                <div class="col-md-4  gallery-item deluxe show">
-                    <a class="gallery-link popup-image" href="images/gallery/1.jpg">
-
-                        <img src="images/gallery/1.jpg" loading="lazy" class="gallery-img" alt="Room 1">
-
-                    </a>
-
-                    </a>
-
+                <div class="col-md-4 gallery-item deluxe show">
+                    <img src="images/gallery/1.jpg" loading="lazy" class="gallery-img" alt="Room 1" onclick="openModal();currentSlide(1)">
                 </div>
                 <div class="col-md-4 gallery-item deluxe show">
-                    <a class="gallery-link popup-image" href="images/gallery/2.jpg"
-                        data-lightbox="gallery" data-title="Room 2">
-                        <img src="images/gallery/2.jpg" loading="lazy" class="gallery-img" alt="Room 2">
-                    </a>
-
-
+                    <img src="images/gallery/2.jpg" loading="lazy" class="gallery-img" alt="Room 2" onclick="openModal();currentSlide(2)">
                 </div>
                 <div class="col-md-4 gallery-item deluxe show">
-
-                    <a class="gallery-link popup-image" href="images/gallery/3.jpg" data-lightbox="gallery"
-                        data-title="Room 3">
-                        <img src="images/gallery/3.jpg" loading="lazy" class="gallery-img" alt="Room 3">
-                    </a>
-
-
+                    <img src="images/gallery/3.jpg" loading="lazy" class="gallery-img" alt="Room 3" onclick="openModal();currentSlide(3)">
                 </div>
                 <div class="col-md-4 gallery-item deluxe show">
-                    <a class="gallery-link popup-image" href="images/gallery/4.jpg" data-lightbox="gallery"
-                        data-title="Room 3">
-                        <img src="images/gallery/4.jpg" loading="lazy" class="gallery-img" alt="Room 4"> </a>
+                    <img src="images/gallery/4.jpg" loading="lazy" class="gallery-img" alt="Room 4" onclick="openModal();currentSlide(4)">
                 </div>
-
 
                 <!-- Executive room -->
                 <div class="col-md-4 gallery-item executive show">
-                    <a class="gallery-link popup-image" href="images/gallery/5.JPG"
-                        data-lightbox="gallery" data-title="Room 3">
-                        <img src="images/gallery/5.JPG" loading="lazy" class="gallery-img" alt="Dining 1">
-                    </a>
-                </div>
-
-                <div class="col-md-4 gallery-item executive show">
-                    <a class="gallery-link popup-image" href="images/gallery/6.JPG"
-                        data-lightbox="gallery" data-title="Room 3">
-                        <img src="images/gallery/6.JPG" loading="lazy" class="gallery-img" alt="Dining 2">
-                    </a>
+                    <img src="images/gallery/5.JPG" loading="lazy" class="gallery-img" alt="Dining 1" onclick="openModal();currentSlide(5)">
                 </div>
                 <div class="col-md-4 gallery-item executive show">
-                    <a class="gallery-link popup-image" href="images/gallery/7.JPG"
-                        data-lightbox="gallery" data-title="Room 3">
-                        <img src="images/gallery/7.JPG" loading="lazy" class="gallery-img"
-                            alt="Dining 3"></a>
+                    <img src="images/gallery/6.JPG" loading="lazy" class="gallery-img" alt="Dining 2" onclick="openModal();currentSlide(6)">
                 </div>
                 <div class="col-md-4 gallery-item executive show">
-                    <a class="gallery-link popup-image" href="images/gallery/8.JPG" Room 3>
-                        <img src="images/gallery/8.JPG" loading="lazy" class="gallery-img" alt="Dining 4">
-                    </a>
+                    <img src="images/gallery/7.JPG" loading="lazy" class="gallery-img" alt="Dining 3" onclick="openModal();currentSlide(7)">
                 </div>
                 <div class="col-md-4 gallery-item executive show">
-                    <a class="gallery-link popup-image" href="images/gallery/9.JPG" Room 3>
-                        <img src="images/gallery/9.JPG" loading="lazy" class="gallery-img"
-                            alt="Dining 5"></a>
+                    <img src="images/gallery/8.JPG" loading="lazy" class="gallery-img" alt="Dining 4" onclick="openModal();currentSlide(8)">
+                </div>
+                <div class="col-md-4 gallery-item executive show">
+                    <img src="images/gallery/9.JPG" loading="lazy" class="gallery-img" alt="Dining 5" onclick="openModal();currentSlide(9)">
                 </div>
 
                 <!-- super executive -->
-
                 <div class="col-md-4 gallery-item super show">
-                    <a class="gallery-link popup-image" href="images/gallery/10.JPG" Room 3>
-                        <img src="images/gallery/10.JPG" class="gallery-img" alt="Hotel 1"> </a>
+                    <img src="images/gallery/10.JPG" class="gallery-img" alt="Hotel 1" onclick="openModal();currentSlide(10)">
                 </div>
                 <div class="col-md-4 gallery-item super show">
-                    <a class="gallery-link popup-image" href="images/gallery/11.JPG" Room 3>
-                        <img src="images/gallery/11.JPG" class="gallery-img" alt="Hotel 2"> </a>
-                </div>
-                <div class="col-md-4 gallery-item super  show">
-                    <a class="gallery-link popup-image" href="images/gallery/12.JPG" Room 3>
-                        <img src="images/gallery/12.JPG" class="gallery-img" alt="Hotel 3"></a>
+                    <img src="images/gallery/11.JPG" class="gallery-img" alt="Hotel 2" onclick="openModal();currentSlide(11)">
                 </div>
                 <div class="col-md-4 gallery-item super show">
-                    <a class="gallery-link popup-image" href="images/gallery/14.JPG" Room 3>
-                        <img src="images/gallery/14.JPG" class="gallery-img" alt="Hotel 4"> </a>
+                    <img src="images/gallery/12.JPG" class="gallery-img" alt="Hotel 3" onclick="openModal();currentSlide(12)">
                 </div>
                 <div class="col-md-4 gallery-item super show">
-                    <a class="gallery-link popup-image" href="images/gallery/8.JPG" Room 3>
-                        <img src="images/gallery/8.JPG" class="gallery-img" alt="Hotel 5"> </a>
+                    <img src="images/gallery/14.JPG" class="gallery-img" alt="Hotel 4" onclick="openModal();currentSlide(13)">
                 </div>
                 <div class="col-md-4 gallery-item super show">
-                    <a class="gallery-link popup-image" href="images/gallery/5.JPG" Room 3>
-                        <img src="images/gallery/5.JPG" class="gallery-img" alt="Hotel 6"> </a>
+                    <img src="images/gallery/8.JPG" class="gallery-img" alt="Hotel 5" onclick="openModal();currentSlide(14)">
+                </div>
+                <div class="col-md-4 gallery-item super show">
+                    <img src="images/gallery/5.JPG" class="gallery-img" alt="Hotel 6" onclick="openModal();currentSlide(15)">
                 </div>
 
                 <!-- hotel -->
@@ -476,7 +525,15 @@
 
     </section>
 
- 
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <img class="modal-image" id="modalImg">
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+    </div>
 
     <!-- offer-banner -->
     <!---- <section class="offer-banner wow slideInUp">
@@ -795,7 +852,7 @@
         });
     });
   </script>
-      <script>
+    <script>
         function filterGallery(category) {
             const items = document.querySelectorAll('.gallery-item');
             items.forEach(item => {
@@ -806,6 +863,70 @@
                 }
             });
         }
+
+        // Gallery Modal Functions
+        let slideIndex = 1;
+        const images = [
+            'images/gallery/1.jpg',
+            'images/gallery/2.jpg', 
+            'images/gallery/3.jpg',
+            'images/gallery/4.jpg',
+            'images/gallery/5.JPG',
+            'images/gallery/6.JPG',
+            'images/gallery/7.JPG',
+            'images/gallery/8.JPG',
+            'images/gallery/9.JPG',
+            'images/gallery/10.JPG',
+            'images/gallery/11.JPG',
+            'images/gallery/12.JPG',
+            'images/gallery/14.JPG',
+            'images/gallery/8.JPG',
+            'images/gallery/5.JPG'
+        ];
+
+        function openModal() {
+            document.getElementById('imageModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            if (n > images.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = images.length}
+            document.getElementById('modalImg').src = images[slideIndex-1];
+        }
+
+        // Close modal when clicking outside the image
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(event) {
+            const modal = document.getElementById('imageModal');
+            if (modal.style.display === 'block') {
+                if (event.key === 'ArrowLeft') {
+                    plusSlides(-1);
+                } else if (event.key === 'ArrowRight') {
+                    plusSlides(1);
+                } else if (event.key === 'Escape') {
+                    closeModal();
+                }
+            }
+        });
     </script>
 
 
