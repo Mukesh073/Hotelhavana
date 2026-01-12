@@ -3776,7 +3776,7 @@ Section Title
           transform: translateX(-50%);
   width: 45px;
   height: 40px;
-  background-image: url(../images/resource/title-image.png);
+
   z-index: 99;
 }
 .banner-section-two .banner-slider .content-box h1 {
