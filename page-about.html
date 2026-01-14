@@ -20,6 +20,52 @@
 <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 <style>
+  
+    /* --- Base Gaps & Fixes --- */
+    .about-section img {
+      display: block; 
+      width: 100%;
+      height: auto !important;
+    }
+
+    /* --- TABLET VIEW FIX (768px to 1199px) --- */
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .about-section {
+        padding-top: 120px !important; /* Yahan se Tablet me top padding badhayi gayi hai */
+        padding-bottom: 80px !important;
+      }
+      .about-section .features-grid {
+        grid-template-columns: 1fr 1fr !important; /* Tablet par side-by-side */
+        gap: 25px;
+      }
+      .about-section .image-column {
+        margin-bottom: 70px; /* Image aur content ke beech gap */
+      }
+      .about-section .quote-box {
+        position: absolute;
+        bottom: -30px;
+        right: 0 !important;
+        max-width: 300px !important;
+      }
+    }
+
+    /* --- MOBILE VIEW (Below 767px) --- */
+    @media (max-width: 767px) {
+      .about-section { padding: 50px 0 !important; }
+      .about-section h2 { font-size: 28px !important; }
+      .about-section .features-grid { grid-template-columns: 1fr !important; }
+      .about-section .quote-box {
+        position: relative !important;
+        right: auto !important;
+        bottom: auto !important;
+        margin-top: 40px;
+        max-width: 100% !important;
+      }
+    }
+
+    .about-section .image-box:hover img { transform: scale(1.05); }
+
+
 /* Fix dropdown menu styling */
 .main-menu .navigation > li.dropdown > ul {
     background: #333 !important;
@@ -265,141 +311,106 @@
     </header>
     <!--End Main Header -->
 
-   <!-- Start main-content -->
 <section class="page-title" style="background-image: url(images/background/page-title-bg.png);">
-	<div class="auto-container">
-		<div class="title-outer text-center">
-			<h1 class="title">About Us</h1>
-			<ul class="page-breadcrumb">
-				<li><a href="index.html">Home</a></li>
-				<li>About Us</li>
-			</ul>
-		</div>
-	</div>
-</section>
-<!-- end main-content -->
-  <!-- About Section -->
- 
-    <!-- Enhanced About Section -->
- <section class="about-section pt-0" style="padding: 80px 0 60px 0; background: #ffffff;">
-  <style>
-    /* --- Base Gaps & Fixes --- */
-    .about-section img {
-      display: block; 
-      width: 100%;
-      height: auto !important;
-    }
-
-    /* --- TABLET VIEW FIX (768px to 1199px) --- */
-    @media (min-width: 768px) and (max-width: 1199px) {
-      .about-section {
-        padding-top: 120px !important; /* Yahan se Tablet me top padding badhayi gayi hai */
-        padding-bottom: 80px !important;
-      }
-      .about-section .features-grid {
-        grid-template-columns: 1fr 1fr !important; /* Tablet par side-by-side */
-        gap: 25px;
-      }
-      .about-section .image-column {
-        margin-bottom: 70px; /* Image aur content ke beech gap */
-      }
-      .about-section .quote-box {
-        position: absolute;
-        bottom: -30px;
-        right: 0 !important;
-        max-width: 300px !important;
-      }
-    }
-
-    /* --- MOBILE VIEW (Below 767px) --- */
-    @media (max-width: 767px) {
-      .about-section { padding: 50px 0 !important; }
-      .about-section h2 { font-size: 28px !important; }
-      .about-section .features-grid { grid-template-columns: 1fr !important; }
-      .about-section .quote-box {
-        position: relative !important;
-        right: auto !important;
-        bottom: auto !important;
-        margin-top: 40px;
-        max-width: 100% !important;
-      }
-    }
-
-    .about-section .image-box:hover img { transform: scale(1.05); }
-  </style>
-
-  <div class="auto-container">
-    <div class="row align-items-center">
-      
-      <div class="image-column col-xl-6 col-lg-6 col-md-12">
-        <div class="inner-column" style="position: relative; padding-top: 40px;">
-          
-          <div class="premium-image-container" style="position: relative; border-radius: 25px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.4); background: #c78a36; padding: 6px;">
-            
-            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, #c78a36, #aa8453, #8e6d42, #c78a36); border-radius: 25px; padding: 3px; z-index: 1;">
-              <div style="background: #1a1a1a; border-radius: 22px; width: 100%; height: 100%;"></div>
-            </div>
-            
-            <div class="image-box" style="position: relative; border-radius: 20px; overflow: hidden; z-index: 2; background: #1a1a1a;">
-              <figure class="image wow fadeInUp" style="margin: 0;">
-                <img src="images/banner/receptions.JPG" alt="Hotel Havana Gorakhpur" style="width: 100%; transition: all 0.6s ease; filter: brightness(1.1);">
-                <div class="luxury-badge" style="position: absolute; top: 20px; left: 20px; background: rgba(199,138,54,0.95); color: #fff; padding: 8px 16px; border-radius: 25px; font-size: 12px; font-weight: 700; text-transform: uppercase;">
-                  <i class="fa fa-crown" style="margin-right: 5px;"></i>Premium Suite
-                </div>
-              </figure>
-            </div>
-          </div>
-          
-          <div class="quote-box" style="position: absolute; bottom: -20px; right: -15px; background: linear-gradient(145deg, #2a2a2a, #1f1f1f); padding: 30px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 2px solid #c78a36; max-width: 320px; z-index: 3;">
-            <div class="rating-box" style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
-              <div style="background: linear-gradient(135deg, #c78a36, #aa8453); padding: 10px 15px; border-radius: 12px;">
-                <span style="font-size: 24px; font-weight: 900; color: #fff;">5.0</span>
-              </div>
-              <div style="display: flex; flex-direction: column;">
-                <div style="display: flex; gap: 4px; color: #ffb400;">
-                  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                </div>
-                <span style="color: #c78a36; font-size: 12px; font-weight: 600;">Google Excellence</span>
-              </div>
-            </div>
-            <div class="text" style="font-size: 14px; line-height: 1.6; color: #f0f0f0; font-style: italic;">
-              "Recognized for <span style="color: #c78a36; font-weight: 700;">impeccable hygiene</span> and unparalleled hospitality in Gorakhpur."
-            </div>
-          </div>
+      <div class="auto-container">
+        <div class="title-outer text-center">
+          <h1 class="title">About Us</h1>
+          <ul class="page-breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>About Us</li>
+          </ul>
         </div>
       </div>
+    </section>
+    <section class="about-section pt-0" style="padding: 80px 0 60px 0; background: #ffffff;">
+      <div class="auto-container">
+        <div class="row align-items-center">
+          
+          <div class="image-column col-xl-6 col-lg-6 col-md-12">
+            <div class="inner-column" style="position: relative; padding-top: 40px;">
+              
+              <div class="premium-image-container" style="position: relative; border-radius: 25px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.4); background: #c78a36; padding: 6px;">
+                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, #c78a36, #aa8453, #8e6d42, #c78a36); border-radius: 25px; padding: 3px; z-index: 1;">
+                  <div style="background: #1a1a1a; border-radius: 22px; width: 100%; height: 100%;"></div>
+                </div>
+                
+                <div class="image-box" style="position: relative; border-radius: 20px; overflow: hidden; z-index: 2; background: #1a1a1a;">
+                  <figure class="image wow fadeInUp" style="margin: 0;">
+                    <img src="images/banner/receptions.JPG" alt="Hotel Havana Gorakhpur" style="width: 100%; transition: all 0.6s ease; filter: brightness(1.1);">
+                    <div class="luxury-badge" style="position: absolute; top: 20px; left: 20px; background: rgba(199,138,54,0.95); color: #fff; padding: 8px 16px; border-radius: 25px; font-size: 12px; font-weight: 700; text-transform: uppercase;">
+                      <i class="fa fa-crown" style="margin-right: 5px;"></i>Premium Suite
+                    </div>
+                  </figure>
+                </div>
+              </div>
+              
+              <div class="quote-box" style="position: absolute; bottom: -20px; right: -15px; background: linear-gradient(145deg, #2a2a2a, #1f1f1f); padding: 30px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 2px solid #c78a36; max-width: 320px; z-index: 3;">
+                <div class="rating-box" style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                  <div style="background: linear-gradient(135deg, #c78a36, #aa8453); padding: 10px 15px; border-radius: 12px;">
+                    <span style="font-size: 24px; font-weight: 900; color: #fff;">5.0</span>
+                  </div>
+                  <div style="display: flex; flex-direction: column;">
+                    <div style="display: flex; gap: 4px; color: #ffb400;">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    </div>
+                    <span style="color: #c78a36; font-size: 12px; font-weight: 600;">Google Excellence</span>
+                  </div>
+                </div>
+                <div class="text" style="font-size: 14px; line-height: 1.6; color: #f0f0f0; font-style: italic;">
+                  "Recognized for <span style="color: #c78a36; font-weight: 700;">impeccable hygiene</span> and best location near LIC Office & Taramandal."
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <div class="content-column col-xl-6 col-lg-6 col-md-12">
+        <div class="content-column col-xl-6 col-lg-6 col-md-12">
         <div class="inner-column" style="padding-left: 40px;">
           <div class="sec-title">
-            <span class="sub-title" style="color: #aa8453; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; display: block; margin-bottom: 15px;">GORAKHPUR'S TOP-RATED HOTEL</span>
-            <h2 style="font-size: 42px; font-weight: 700; color: #333; margin-bottom: 25px;">Where Luxury Meets<br><span style="color: #aa8453;">Heartfelt Hospitality</span></h2>
-            <div class="text" style="font-size: 16px; line-height: 1.7; color: #666; margin-bottom: 35px; text-align: justify;">
-              Havana Hotel is recognized as the <strong style="color: #aa8453;">Best Hotel in Gorakhpur</strong> for travelers who value elegance and peace. Located in the heart of Taramandal.
-            </div>
+            
+            <span class="sub-title" style="color: #aa8453; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; display: block; margin-bottom: 15px;">
+              <i class="fa fa-map-marker-alt"></i> Deoria Bypass Road, Near LIC Office
+            </span>
+            
+            <h2 style="font-size: 42px; font-weight: 700; color: #333; margin-bottom: 25px;">
+              Gorakhpur's Largest<br><span style="color: #aa8453;">Luxury Hotel</span>
+            </h2>
+         <div class="text" style="font-size: 16px; line-height: 1.7; color: #666; margin-bottom: 35px; text-align: justify;">
+    Havana Hotel is the preferred choice for travelers seeking variety and comfort. Located on the <strong>Traffic-Free Deoria Bypass Road</strong>, we save your travel time.
+    <br><br>
+    We pride ourselves on offering a wide range of accommodation. Choose from our <strong>Super Premium Deluxe, Premium Deluxe Twin, Premium Deluxe, or Super Standard Rooms</strong>. Whether you are solo or with family, we have the perfect room for you.
+</div>
             
             <div class="features-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+              
               <div class="feature-list">
-                <h4 class="title" style="color: #c78a36; font-size: 16px; font-weight: 700; margin-bottom: 8px;"><i class="fa fa-gem"></i> Guest Comfort</h4>
+                <h4 class="title" style="color: #c78a36; font-size: 16px; font-weight: 700; margin-bottom: 8px;"><i class="fa fa-map-signs"></i> Nearby Landmarks</h4>
                 <ul style="list-style: none; padding: 0; margin: 0; color: #555; font-size: 14px;">
-                  <li style="padding: 4px 0;"><i class="fa fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>Super Clean & Hygienic</li>
-                  <li style="padding: 4px 0;"><i class="fa fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>Beautiful Ambience</li>
-                  <li style="padding: 4px 0;"><i class="fa fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>Modern Interior Design</li>
+                  <li style="padding: 4px 0;"><i class="fa fa-check-circle" style="color: #28a745; margin-right: 8px;"></i><strong>Nauka Vihar:</strong> 10 Mins</li>
+                  <li style="padding: 4px 0;"><i class="fa fa-check-circle" style="color: #28a745; margin-right: 8px;"></i><strong>Gorakhpur Zoo:</strong> 15 Mins</li>
+                  <li style="padding: 4px 0;"><i class="fa fa-check-circle" style="color: #28a745; margin-right: 8px;"></i><strong>Planetarium:</strong> Walking Dist.</li>
                 </ul>
               </div>
+
               <div class="feature-list">
-                <h4 class="title" style="color: #c78a36; font-size: 16px; font-weight: 700; margin-bottom: 8px;"><i class="fa fa-handshake"></i> Our Promise</h4>
+                <h4 class="title" style="color: #c78a36; font-size: 16px; font-weight: 700; margin-bottom: 8px;"><i class="fa fa-hotel"></i> Why Choose Us?</h4>
                 <ul style="list-style: none; padding: 0; margin: 0; color: #555; font-size: 14px;">
-                  <li style="padding: 4px 0;"><i class="fa fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>Cooperative Staff</li>
-                  <li style="padding: 4px 0;"><i class="fa fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>Prime City Location</li>
-                  <li style="padding: 4px 0;"><i class="fa fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>24/7 Professional Service</li>
+                  <li style="padding: 4px 0;">
+                    <i class="fa fa-check-circle" style="color: #28a745; margin-right: 8px;"></i><strong>All Room Categories</strong>
+                  </li>
+                  <li style="padding: 4px 0;">
+                    <i class="fa fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>5.0 Star Google Rating
+                  </li>
+                  <li style="padding: 4px 0;">
+                    <i class="fa fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>Near LIC Office (Corporate)
+                  </li>
                 </ul>
               </div>
+
             </div>
 
             <div style="margin-top: 35px;">
-              <a href="page-about.html" style="display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, #aa8453 0%, #8e6d42 100%); color: #fff; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: 600; text-transform: uppercase;">
-                <span>Discover More</span> <i class="fa fa-arrow-right"></i>
+              <a href="https://www.google.com/maps/search/?api=1&query=Hotel+Havana+Deoria+Bypass+Road+Gorakhpur" target="_blank" style="display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, #aa8453 0%, #8e6d42 100%); color: #fff; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: 600; text-transform: uppercase;">
+                <span>Get Directions</span> <i class="fa fa-location-arrow"></i>
               </a>
             </div>
 
@@ -407,20 +418,16 @@
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
-    <!-- End food section -->
-
-  <!--Emd About Section -->
-  
+        </div>
+      </div>
+    </section>
     <section class="service-section-two" style="padding: 80px 0 40px 0;">
       <div class="auto-container">
-        <div class="sec-title text-center wow fadeInUp"> <span class="sub-title">Havana SERVICES</span>
+        <div class="sec-title text-center wow fadeInUp"> <span class="sub-title">HAVANA SERVICES</span>
           <h2>Hotel Facilities</h2>
         </div>
         <div class="row">
-          <!-- service-block -->
+          
           <div class="service-block-two col-lg-4 col-sm-6">
             <div class="inner-box wow fadeInLeft">
               <div class="image-box">
@@ -428,40 +435,38 @@
                 <h4 class="title"><a href="page-service-details.html">Room Service</a></h4>
               </div>
               <div class="content-box">
-                <div class="text">24/7 service, in-room dining, housekeeping, laundry, comfort assured.</div>
+                <div class="text">24/7 service, in-room dining, and housekeeping for a comfortable stay.</div>
               </div>
             </div>
           </div>
-         
-          <!-- service-block -->
+          
           <div class="service-block-two col-lg-4 col-sm-6">
             <div class="inner-box wow fadeInLeft" data-wow-delay="300ms">
               <div class="image-box">
                 <div class="icon-box wow fadeInUp"><i class="flaticon-car"></i></div>
-                <h4 class="title"><a href="page-service-details.html">Parking Space</a></h4>
+                <h4 class="title"><a href="page-service-details.html">Secure Parking</a></h4>
               </div>
               <div class="content-box">
-                <div class="text">Spacious parking, 24/7 security, valet service, easy vehicle access.</div>
+                <div class="text">Spacious parking with 24/7 security and easy vehicle access for guests.</div>
               </div>
             </div>
           </div>
-          <!-- service-block -->
+          
           <div class="service-block-two col-lg-4 col-sm-6">
             <div class="inner-box wow fadeInLeft" data-wow-delay="400ms">
               <div class="image-box">
                 <div class="icon-box wow fadeInUp"><i class="flaticon-breakfast"></i></div>
-                <h4 class="title"><a href="page-service-details.html">Breakfast</a></h4>
+                <h4 class="title"><a href="page-service-details.html">Restaurant & Dining</a></h4>
               </div>
               <div class="content-box">
-                <div class="text">Delicious breakfast, fresh ingredients, multiple cuisines, timely room service.</div>
+                <div class="text">Enjoy delicious multi-cuisine breakfast and fresh meals prepared daily.</div>
               </div>
             </div>
           </div>
-         
+          
         </div>
       </div>
     </section>
-   
        <!-- call-to-action -->
      <!-- call-to-action -->
     <section class="call-to-action" style="padding: 60px 0;">
